@@ -33,8 +33,10 @@ router.delete('/delete', function(req,resp){
     })
 })
 
-router.put('/update',function(req,resp){
-    burger.update(req.body.id,function(result){
+router.put('/:id',function(req,resp){
+    console.log("here")
+    burger.update(req.params.id,function(result){
+        console.log(result)
         resp.status(200).end()
     })
 })

@@ -17,18 +17,18 @@ var orm = {
         })
     },
     updateOne: function(table,id,cb){
-        var query='UPDATE ?? SET devoured =1 WHERE ID = ?'
+        var query='UPDATE burgers SET devoured =1 WHERE ID = ?'
 
-        connection.query(query,[table,id], function(err,result){
+        connection.query(query,[id], function(err,result){
             if (err) throw err
 
             cb(resp)
         })
     },
-    deleteOne:function(table,id,cb) {
-        var query='DELETE FROM ?? WHERE ID = ?'
+    deleteOne:function(id,cb) {
+        var query='DELETE FROM burgers WHERE ID = ?'
 
-        connection.query(query,[table,id], function(err, resp){
+        connection.query(query,[id], function(err, resp){
             if (err) throw err
 
             cb(resp)
