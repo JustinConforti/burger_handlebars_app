@@ -28,7 +28,7 @@ body{
     font-size: 22px;
     text-align: center;
     margin: 0;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
   }
 
     ul li{
@@ -43,13 +43,23 @@ body{
         padding: 8px 0 0 10px;
         margin: 0;
         display: inline-block;
-        float: left;
         border-radius: 10px;
       }
       #unEaten ul li{
+        margin-left:30%;
+        color:white;
         width: 336px;
+        background-color:#242424;
+        border:3px solid #242424;
+        width:30%;
       }
-      #unEaten ul li p{
-        border:3px solid #E7B35B;
-        background-color: #FFE550;
+      .devourBtn {
+        position:absolute;
+        margin-left:25%;
+        margin-top:-2%;
+      }
+      #devoured{
+        margin-left:30%;
+        color:white;
+        width: 336px;
       }
