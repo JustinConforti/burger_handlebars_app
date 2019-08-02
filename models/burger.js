@@ -14,7 +14,7 @@ var burger = {
     },
 
     update:function(id,cb){
-        orm.updateOne('burgers',id,cb), function(res){
+        orm.updateOne(id,cb), function(res){
             cb(res)
         }
     },

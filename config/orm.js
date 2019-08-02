@@ -16,13 +16,13 @@ var orm = {
             cb(resp)
         })
     },
-    updateOne: function(table,id,cb){
+    updateOne: function(id,cb){
         var query='UPDATE burgers SET devoured =1 WHERE ID = ?'
 
         connection.query(query,[id], function(err,result){
             if (err) throw err
 
-            cb(resp)
+            cb(result)
         })
     },
     deleteOne:function(id,cb) {
